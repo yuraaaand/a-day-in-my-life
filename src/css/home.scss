@@ -1,0 +1,25 @@
+/* Page load animation */
+.home-once {
+    opacity: 0;
+}
+.home-once-active {
+    transition: opacity 1s linear;
+}
+.home-once-to {
+    opacity: 1;
+}
+/* Slide to home */
+// .barba-leave-active,
+// .barba-enter-active {
+//   transition: opacity 450ms ease;
+// }
+
+// .barba-leave,
+// .barba-enter-to {
+//   opacity: 1;
+// }
+
+// .barba-enter,
+// .barba-leave-to {
+//   opacity: 0;
+// }
