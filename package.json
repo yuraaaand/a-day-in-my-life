@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "start": "node server.js"
   },
   "license": "MIT",
   "devDependencies": {
