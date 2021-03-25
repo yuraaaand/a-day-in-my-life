@@ -8,6 +8,9 @@
     <link href="assets/app.css" rel="stylesheet">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.typewatch.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
   </head>
   <body data-barba="wrapper">
   <!-- put here content that will not change
@@ -21,7 +24,7 @@
         <div>
           <h3 id="aboutopen" class="NeueHaas300 about">
             About our project
-            <img class="nextbox_small" src="images/recbox_small.png" width="130">
+            <img class="nextbox_small" id="border_about" src="images/recbox_small.png">
           </h3>
         </div>
       </div>
@@ -52,17 +55,16 @@
 
         <section class="night parallax-child-container">
           <div class="night parallax-child">
-            <div>
-              <img class="night nextbox_next" id="tonight" src="images/recbox_small.png" width="110">
+            <div id="gotooverview">
+              <img class="sunset nextbox_next" id="tooverview" src="images/recbox_next.png" width="110">
               <h3 id="nextoverview" class="NeueHaas300">
-                <a href="night.html">Next</a>
+                <a href="gallery.html">End day</a>
               </h3>
-              
             </div>
             
             <div class="Spectral300"> 
               <form class="context5" id="context5">
-                <div class="SimplonMono300 nighttime">Night | 11:00:00 P.M</div>
+                <div class="SimplonMono300 nighttime">Night | 11:00:00 P.M.</div>
 
                 <pre class="text">At night, I go to sleep 
                     thinking about whats to come. </pre>
@@ -74,15 +76,15 @@
               <form class="question5"> 
                 <div>
                   <pre class="text">I dream about </pre>
-                  <img class="response" id="p12" src="images/p1_2.png"> 
-                  <img id="circlenextplace" src="images/circle_q1.png" width="350">
-                  <img id="circlelifehere" src="images/circle_q1.png" width="350">
+                  <!-- <img class="response" id="p12" src="images/p1_2.png">  -->
+                  <img id="circleimpact" src="images/circle_q1.png" width="350">
+                  <img id="circleraise" src="images/circle_q1.png" width="350">
 
                   <div class="choice5 SimplonMono400 btn">
                     <!-- <button id="work" class="btn">Work</button> -->
-                    <div id="nextplace" class="btn">the impact of my project</div>
+                    <div id="impact" class="btn">the impact of my project</div>
                     <br>
-                    <div id="lifehere" class="btn">getting a raise</div>
+                    <div id="raise" class="btn">getting a raise</div>
 
                     <!-- <button id="family" class="btn">Family & Friends</button>
                     <button id="pet" class="btn">Pet</button>
@@ -90,6 +92,36 @@
                     <button id="downtime" class="btn">Downtime</button> -->
                 
                   </div>
+
+                  <video  id="praise">
+                    <source  src="images/raise.webm" type="video/webm">
+                  </video>
+    
+                  <video id="pimpact">
+                    <source  src="images/impact.webm" type="video/webm">
+                  </video> 
+
+                  <p class="SimplonMono500" id="dimpact1">
+                    1944 designers are falling asleep feeling they’re not contributing to worthwhile problems.
+                  </p>
+                  <p class="SimplonMono500" id="dimpact2">
+                    3227 designers tonight are reflecting on the environmental impacts of design.
+                  </p>
+                  <p class="SimplonMono500" id="dimpact3">
+                    3811 designers are reflecting on the growing issue of ethics in design.
+                  </p>
+  
+  
+                  <p class="SimplonMono500" id="draise1">
+                    Most designers are making between $50,000 and $75,000 this year.
+                  </p>
+                  <p class="SimplonMono500" id="draise2">
+                    233 designers are the top 2% designers who are making more than $200,000 this year.
+                  </p>
+                  <p class="SimplonMono500" id="draise3">
+                    _designers in [city] worries about not getting paid what they are worth. [challenges I'm not paid what I'm worth]
+                  </p>
+
 
 
 

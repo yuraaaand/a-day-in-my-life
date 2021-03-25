@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>A Day in My Life | Gallery</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="assets/app.css" rel="stylesheet">
+    <!-- <script src="js/jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.typewatch.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+
+
+  </head>
+  <body data-barba="wrapper">
+  <!-- put here content that will not change
+  between your pages, like <header> or <nav> -->
+    <main class="viewport gallery" data-barba="container" data-barba-namespace="gallery" class="is-gallery" data-background="linear-gradient(#47427D 29.14%, #6C528B 109.35%)">
+      
+      <div class="topNav">
+        <!-- <h2 class="Spectral300 navTitle">
+          A <span class="DuosBrush300">Day</span> in My Life
+        </h2> -->
+        <div>
+          <h3 id="aboutopen" class="NeueHaas300 about">
+            About our project
+            <img class="nextbox_small" id="border_about" src="images/recbox_small.png">
+          </h3>
+        </div>
+        <div>
+          <h3 id="restartopen" class="NeueHaas300 restart">
+            <a href="index.html">Start another day</a>
+            <img class="nextbox_small" id="border_restart" src="images/recbox_small.png">
+          </h3>
+        </div>
+      </div>
+
+      <div class="aboutpage" id="aboutpage">
+          <img class="placeholder" id="placeholder" src="images/about_page.png" height="300rem">
+
+      </div>
+
+      
+      <div id="logo">
+        <img id = "logopng" src = "images/logo.png">
+        <p id="intro" class="Spectral300">My name is Yuran. I’m currently living my 21 year old life. I have 2 years of expereince in design. My main priority right now is work. </p>
+      </div>
+      
+      <div id="dottedline"></div>
+
+      
+      
+      <div class="parallax-parent">
+        <div class="gallery background-colors">
+          <div id="gallery" class="noise"></div>
+        </div>
+
+
+
+        <section class="gallery-parallax-child-container" id="1st">
+          <div class="gallery-parallax-child">
+            <div id = "change1">
+              <p class="SimplonMono400 time">Dawn | 6:00:00 A.M.</p>
+              <br>
+              <p id = "q1" class = "sentence Spectral300">Here I am now, opening my curtains to see the daybreak in Pittsburgh.</p>
+            </div>
+            
+            <br>
+            <div class="square">
+              <div id = "wrapper1">
+                <video class = "vids" id="dawnvid" autoplay>
+                  <source src="images/city_window.webm" type="video/webm">
+                </video>
+              </div>
+
+            </div>
+
+            <div id="data1">
+
+            </div>
+          </div>
+        </section>    
+        
+        <section class="gallery-parallax-child-container" id="2nd">
+          <div class="gallery-parallax-child">
+            <div id = "change2">
+              <p class="SimplonMono400 time">Sunrise | 7:00:00 A.M.</p>
+              <br>
+              <p id = "q2" class = "sentence Spectral300">On my way to work, I take in the people, buildings, and scenery around me. I'm thinking about the next place I want to live.</p>
+              <div id="data2" class = "data">
+                <p class="SimplonMono400">
+                  1961 designers who prioritize work are not at all thrilled to be going into work, but they do anyway.
+                  <br><br>
+                  678 designers with 1-4 years of experience are going to work feeling unsure about their jobs.
+                  <br><br>
+                  2026 designers are waking up still feeling a little concerned about their jobs.
+                </p>
+              </div>
+            </div>
+            <br>
+            <div class="square">
+              <div id = "wrapper2">
+                <video class = "vids" id="sunrisevid">
+                  <source src="images/next_place.webm" type="video/webm">
+                </video>
+              </div>
+            </div>
+          </div>
+        </section>    
+
+
+        <section class="gallery-parallax-child-container" id="3rd">
+          <div class="gallery-parallax-child">
+            <div id = "change3">
+              <p class="SimplonMono400 time">Morning | 9:00:00 A.M.</p>
+              <br>
+              <p id = "q3" class = "sentence Spectral300">This morning, I've just been assigned to a new project. I'm feeling intimidated being the only designer on the team.</p>
+              <div id="data3" class = "data">
+                <p class="SimplonMono400">
+
+                  This morning, 3271 designers are thinking about ways to augment their cross-functional and multidisciplinary skills.
+                  <br><br>
+                  6332 designers believe that adaptability is a critical design skill for the future of design.
+                  <br><br>
+                  4397 designers this morning are feeling valued for their role.
+                  <br><br>
+                  4988 designers are thankful that they can exercise autonomy and freedom to make decisions.
+
+                </p>
+              </div>
+            </div>
+            <br>
+            <div class="square">
+              <div id = "wrapper3">
+                <video class = "vids" id="morningvid">
+                  <source src="images/intimidated.webm" type="video/webm">
+                </video>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="gallery-parallax-child-container" id="4th">
+          <div class="gallery-parallax-child">
+            <div id = "change4">
+              <p class="SimplonMono400 time">Midday | 1:00:00 P.M.</p>
+              <br>
+              <p id = "q4" class = "sentence Spectral300">I have a cool idea for my project - but it requires some new skills. During our lunch break, my coworkers and I look for tutorials.</p>
+              <div id="data4" class = "data">
+                <p class="SimplonMono400">
+                  801 designers who have 1-4 years of experience feel they are learning something everyday.
+                  <br><br>
+                  2929 designers might use this time to increase their skill sets.
+                  <br><br>
+                  4200 designers who prioritize work are learning something on the job.
+                </p>
+              </div>
+            </div>
+            <br>
+            <div class="square">
+              <div id = "wrapper4">
+                <video class = "vids" id="middayvid">
+                  <source src="images/tutorials.webm" type="video/webm">
+                </video>
+              </div>
+            </div>
+          </div>
+        </section> 
+
+
+        <section class="gallery-parallax-child-container" id="5th">
+          <div class="gallery-parallax-child">
+            <div id = "change5">
+              <p class="SimplonMono400 time">Sunset | 6:00:00 P.M.</p>
+              <br>
+              <p id = "q5" class = "sentence Spectral300">Before I head out, a coworker stops me. He asks me to join him on a new project. It will pay will but it will require me to work overtime. I get ready to work late.</p>
+              <div id="data5" class = "data">
+                <p class="SimplonMono400">
+                  2836 designers are thinking about utilizing their fitness and wellness benefits this evening.
+                  <br><br>
+                  426 designers are thankful for the childcare benefits and looking forward to get back home.
+                  <br><br>
+                  There are 3565 designers who are enjoying their paid parental leave tonight.
+                </p>
+              </div>
+            </div>
+            <br>
+            <div class="square">
+              <div id = "wrapper5">
+                <video class = "vids" id="sunsetvid">
+                  <source src="images/worklate.webm" type="video/webm">
+                </video>
+              </div>
+            </div>
+          </div>
+        </section> 
+
+
+        <section class="gallery-parallax-child-container" id="6th">
+          <div class="gallery-parallax-child">
+            <div id = "change6">
+              <p class="SimplonMono400 time">Night | 11:00:00 P.M.</p>
+              <br>
+              <p id = "q6" class = "sentence Spectral300">At night, I go to sleep thinking about whats to come. I dream about the impact of my project.</p>
+              <div id="data6" class = "data">
+                <p class="SimplonMono400">
+                  1944 designers are falling asleep feeling they're not contributing to worthwhile problems.
+                  <br><br>
+                  3811 designers are reflecting the growing issue of ethics in design.
+                  <br><br>
+                  3277 designers tonight are reflecting on the environmental impacts of design.
+                </p>
+              </div>
+            </div>
+            <br>
+            <div class="square">
+              <div id = "wrapper6">
+                <video class = "vids" id="nightvid">
+                  <source src="images/impact.webm" type="video/webm">
+                </video>
+              </div>
+            </div>
+          </div>
+        </section> 
+
+
+
+
+        <div class="parallax-background">
+          <!-- <div class="gallery clouds">
+            <img src="images/clouds.png">
+          </div> -->
+           <!-- <h1>MARTIN WHEELER WEB DESIGN</h1> -->
+          <!-- <div id="dottedline"></div> -->
+
+        </div>
+
+      </div>
+
+
+    </main>
+    
+    <script src="assets/app.js"></script>
+
+    
+    
+  </body>
+</html>

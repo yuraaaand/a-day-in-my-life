@@ -8,6 +8,9 @@
     <link href="assets/app.css" rel="stylesheet">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.typewatch.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
   </head>
   <body data-barba="wrapper">
   <!-- put here content that will not change
@@ -21,7 +24,7 @@
         <div>
           <h3 id="aboutopen" class="NeueHaas300 about">
             About our project
-            <img class="nextbox_small" src="images/recbox_small.png" width="130">
+            <img class="nextbox_small" id="border_about" src="images/recbox_small.png">
           </h3>
         </div>
       </div>
@@ -55,17 +58,17 @@
 
         <section class="morning parallax-child-container">
           <div class="morning parallax-child">
-            <div>
-              <img class="morning nextbox_next" id="tomidday" src="images/recbox_small.png" width="110">
+
+            <div id="gotomidday">
+              <img class="morning nextbox_next" id="tomidday" src="images/recbox_next.png" width="110">
               <h3 id="nextmidday" class="NeueHaas300">
                 <a href="midday.html">Next</a>
               </h3>
-              
             </div>
             
             <div class="Spectral300"> 
               <form class="context2" id="context4">
-                <div class="SimplonMono300 morningtime">Morning | 9:00:00 A.M</div>
+                <div class="SimplonMono300 morningtime">Morning | 9:00:00 A.M.</div>
 
                 <pre class="text">This morning, I’ve just been 
                   assigned to a new project.</pre>
@@ -73,24 +76,51 @@
               
               <form class="question2"> 
                 <div>
-                  <pre class="text">I feel                       being the 
+                  <pre class="text">I feel                          being the 
               only designer on the team. </pre>
-                  <img class="response" id="p12" src="images/p1_2.png"> 
-                  <img id="circlenextplace" src="images/circle_q1.png" width="350">
-                  <img id="circlelifehere" src="images/circle_q1.png" width="350">
+                  <img id="circleintimidated" src="images/circle_q1.png" width="350">
+                  <img id="circleempowered" src="images/circle_q1.png" width="350">
 
                   <div class="choice2 SimplonMono400 btn">
-                    <!-- <button id="work" class="btn">Work</button> -->
-                    <div id="nextplace" class="btn">intimidated</div>
+                    <div id="intimidated" class="btn">intimidated</div>
                     <br>
-                    <div id="lifehere" class="btn">empowered</div>
+                    <div id="empowered" class="btn">empowered</div>
 
-                    <!-- <button id="family" class="btn">Family & Friends</button>
-                    <button id="pet" class="btn">Pet</button>
-                    <button id="travel" class="btn">Travel</button>
-                    <button id="downtime" class="btn">Downtime</button> -->
+
                 
                   </div>
+
+
+                  <video  id="pempowered">
+                    <source  src="images/empowered.webm" type="video/webm">
+                  </video>
+    
+                  <video id="pintimidated">
+                    <source  src="images/intimidated.webm" type="video/webm">
+                  </video> 
+
+                  <p class="SimplonMono500" id="dintimidated1">
+                    4617 designers this morning are worried about designers not having a seat at the table.                  </p>
+                  <p class="SimplonMono500" id="dintimidated2">
+                    _designers with [years of experience] feel they do not really have a voice [issues].
+                  </p>
+                  <p class="SimplonMono500" id="dintimidated3">
+                    This morning, _designers are thinking about the growing role of automation in their workplace [issues]
+                  </p>
+  
+  
+                  <p class="SimplonMono500" id="dempowered1">
+                    This morning, 3271 designers are thinking about ways to augment their cross-functional and multidisciplinary skills.
+                  </p>
+                  <p class="SimplonMono500" id="dempowered2">
+                    6332 designers believe that adaptability is a critical design skill for the future of design.
+                  </p>
+                  <p class="SimplonMono500" id="dempowered3">
+                    4397 designers this morning are feeling valued for their role.
+                  </p>
+                  <p class="SimplonMono500" id="dempowered4">
+                    4988 designers are thankful that they can exercise autonomy and freedom to make decisions.
+                  </p>
 
 
 

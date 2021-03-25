@@ -27,7 +27,8 @@
         <div>
           <h3 id="aboutopen" class="NeueHaas300 about">
             About our project
-            <img class="nextbox_small" src="images/recbox_small.png" width="130">
+            <img class="nextbox_small" id="border_about" src="images/recbox_small.png">
+            <!-- <img class="nextbox_small" id="circle_about" src="images/circle1.gif"> -->
           </h3>
         </div>
       </div>
@@ -66,8 +67,9 @@
             <!-- <button id="testbtn">scrollby</button> -->
             <!-- <h1>MY PROJECTS</h1> -->
             <!-- <h1><a href="sunrise.html">Begin my day</a></h1> -->
-            <div>
-              <img class="dawn nextbox_next" id="tosunrise" src="images/recbox_small.png" width="110">
+            <div id="gotosunrise">
+              <!-- <img class="dawn nextcircle_next" src="images/circle1.gif" width="110"> -->
+              <img class="dawn nextbox_next" id="tosunrise" src="images/recbox_next.png" width="110">
               <h3 id="nextsunrise" class="NeueHaas300">
                 <a href="sunrise.html">Next</a>
               </h3>
@@ -77,31 +79,31 @@
             <div class="Spectral300"> 
               
               <form class="myname" id="myname">
-                <div class="SimplonMono300 dawntime">Dawn | 6:00:00 A.M</div>
-
-                <pre class="text">My name is <label for="name"></label><input id="name" type="text"> .</pre>
+                <div class="SimplonMono300 dawntime">Dawn | 6:00:00 A.M.</div>
+                <img id="nameline" src="images/line_long.png">
+                <pre class="text">My name is <label for="name"></label><input id="name" type="text" autocomplete="off"> .</pre>
                 <div id="nameins" class="instruction NeueHaas300">Enter first name</div>
               </form>
               <form class="myage" id="myage"> 
-                <img class="response" id="p11" src="images/p1_1.png"> 
-                <pre class="text">I'm currently living <br>       my <label for="yo"></label><input type="text" id="yo" name="yo"> year old life. </pre> 
+                <img id="yoline" src="images/line_short.png">
+                <pre class="text">I'm currently living <br>       my <label for="yo"></label><input type="text" id="yo" name="yo" autocomplete="off"> year old life. </pre> 
                 <div id="yoins" class="instruction NeueHaas300">Enter # age</div>
               </form>
               <form class="myyear"> 
-                <pre class="text" style="line-height: 170%">I have <label for="yr"></label><input type="text" id="yr" name="yr"> years of 
+                <img id="yrline" src="images/line_short.png">
+                <pre class="text" style="line-height: 170%">I have <label for="yr"></label><input type="text" id="yr" name="yr" autocomplete="off"> years of 
         experience in design. </pre>
                 <div id="yrins" class="instruction NeueHaas300">Enter # years</div>
               </form>
               <form class="mypriority"> 
                 <div>
                   <pre class="text">My main priority right now is                      .</pre>
-                  <img class="response" id="p12" src="images/p1_2.png"> 
                   <img id="circlework" src="images/circle.png" width="170">
                   <img id="circlefamily" src="images/circle.png" width="170">
                   <img id="circlepet" src="images/circle.png" width="170">
                   <img id="circletravel" src="images/circle.png" width="170">
                   <img id="circledowntime" src="images/circle.png" width="170">
-                  <div class="priority SimplonMono400 btn">
+                  <div class="priority SimplonMono400 btn rem">
                     <!-- <button id="work" class="btn">Work</button> -->
                     <div id="work" class="btn">work</div>
                     <div id="family" class="btn">family and friends</div>
@@ -119,15 +121,19 @@
                 </div>
               </form>
               <form class="mycity"> 
-                <img class="response" id="p13" src="images/p1_3.png"> 
-                <img class="response" id="p14" src="images/p1_4.gif"> 
-                <p class="SimplonMono400" id="d1">
-                  00 designers are waking up still feeling a little concerned about their jobs
-                </p>
 
+
+                <video class="response" id="pcity4">
+                  <source  src="images/city_window.webm" type="video/webm">
+                </video>
+
+                <video class="response" id="prural4">
+                  <source  src="images/rural_window.webm" type="video/webm">
+                </video>
+                <img id="cityline" src="images/line_long.png">
                 <pre class="text">Here I am now, 
         opening my curtains to
-              see the daybreak in <label for="city"></label><input type="text" id="city" name="city"> . </pre>
+              see the daybreak in <label for="city"></label><input type="text" id="city" name="city" autocomplete="off"> . </pre>
               <div id="cityins" class="instruction NeueHaas300">Enter city name </div>
               <!-- <div>
                 <img class="dawn nextbox_next" id="tosunrise" src="images/recbox_small.png" width="110">
@@ -138,9 +144,6 @@
               </div> -->
               </form>
 
-            </div>
-            <div class="responses">
-              <!-- <img id="p11" src="images/p1_1.png">  -->
             </div>
           </div>
         </section>

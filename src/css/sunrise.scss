@@ -147,4 +147,123 @@ $pages: 2;
   right: -110%;
   bottom: 55%;
 }
-  
+
+
+#plifehere {
+  position: absolute;
+  left: 57rem;
+  top: 0rem;
+  height: 20rem;
+  display: none;
+}
+
+#pnextplace {
+  position: absolute;
+  left: 57rem;
+  top: 0rem;
+  height: 20rem;
+  display: none;
+}
+
+
+#dlifehere1 {
+  position: absolute;
+  left: 35rem;
+  top: 20rem;
+  width: 17rem;
+  letter-spacing: 0;
+  line-height: 125%;
+  font-size: small;
+  color: rgba(255, 255, 255, 1);
+  display: none;
+}
+
+
+
+#dlifehere2 {
+  position: absolute;
+  left: 65rem;
+  top: -5rem;
+  width: 17rem;
+  letter-spacing: 0;
+  line-height: 125%;
+  font-size: small;
+  color: rgba(255, 255, 255, 1);
+  display: none;
+}
+
+#dlifehere3 {
+  position: absolute;
+  left: 80rem;
+  top: 13rem;
+  width: 17rem;
+  letter-spacing: 0;
+  line-height: 125%;
+  font-size: small;
+  color: rgba(255, 255, 255, 1);
+  display: none;
+}
+
+#dnextplace1 {
+  position: absolute;
+  left: 35rem;
+  top: 20rem;
+  width: 17rem;
+  letter-spacing: 0;
+  line-height: 125%;
+  font-size: small;
+  color: rgba(255, 255, 255, 1);
+  display: none;
+}
+
+
+#dnextplace2 {
+  position: absolute;
+  left: 65rem;
+  top: -5rem;
+  width: 17rem;
+  letter-spacing: 0;
+  line-height: 125%;
+  font-size: small;
+  color: rgba(255, 255, 255, 1);
+  display: none;
+}
+
+
+#dnextplace3 {
+  position: absolute;
+  left: 80rem;
+  top: 13rem;
+  width: 17rem;
+  letter-spacing: 0;
+  line-height: 125%;
+  font-size: small;
+  color: rgba(255, 255, 255, 1);
+  display: none;
+}
+
+
+
+#nextmorning {
+  position: absolute;
+  left: -6.7rem;
+  top: .5rem;
+}
+
+
+#gotomorning {
+  // border: 3px solid red;
+  position: absolute;
+  bottom: 55%;
+  right: -105rem;
+  width: 5.6rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+
+.sunrise.nextbox_next {
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  width: 5rem;
+}

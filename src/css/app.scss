@@ -7,6 +7,8 @@
 @import 'midday.scss';
 @import 'sunset.scss';
 @import 'night.scss';
+@import 'gallery.scss';
+
 
 
 
@@ -54,6 +56,12 @@
   font-family: "simplon-mono";
   src:url("../fonts/SimplonMonoTrial-Light.otf") format("OpenType");
   font-weight: 300;
+}
+
+@font-face {
+  font-family: "simplon-mono";
+  src:url("../fonts/SimplonMonoTrial-Medium.otf") format("OpenType");
+  font-weight: 500;
 }
 
 
@@ -105,6 +113,12 @@ body {
   letter-spacing: 0rem;
 }
 
+.SimplonMono500 {
+  font-family: "simplon-mono", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0rem;
+}
+
 h1,
 h2,
 h3 {
@@ -128,7 +142,7 @@ h3 {
 
 $width: 100vw;
 $height: 100vh;
-$pages: 4;
+$pages: 3;
 
 .dawn.background-colors {
     position: relative;
@@ -141,7 +155,7 @@ $pages: 4;
 
 
 .topNav {
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   // display: inline-block;
   text-align: left; //center;
   width: 100%;
@@ -155,21 +169,18 @@ $pages: 4;
 
 .about {
   position: absolute;
-  padding: 2.1rem 3rem;
+  padding: 2.4rem 3rem;
   top: 0%;
   right: 0%;
   text-align: left;
 }
 
-#debug {
-  // border: 20px solid green;
+#aboutopen{
+  // border: 3px solid green;
+  cursor: pointer;
 }
-#aboutclose {
-  position: absolute;
-  top: 6rem;
-  right: 11rem;
-  z-index: 6;
-}
+
+
 
 .titles {
   padding: 0 8rem;
@@ -206,19 +217,24 @@ $pages: 4;
   left: 38.5rem;
 }
 
-.nextbox {
+.nextbox#nextborder_home {
   position: absolute;
   top: 0.4rem;
-  left: -1.5rem;
+  left: -1rem;
   z-index: -1;
+  width: 9rem;
+  height: 4rem;
 }
 
-.nextbox_small {
+
+.nextbox_small#border_about {
   position: absolute;
-  top: 1rem;
+  top: 1.2rem;
   right: 2.2rem;
   z-index: -1;
+  width: 8.4rem;
 }
+
 
 a:link {
   text-decoration:none;
@@ -230,11 +246,6 @@ a:visited {
   color: white;
 }
 
-a:hover {
-  text-decoration: none;
-  color: #E4D4A8;
-  transition: color 0.5s;
-}
 
 .dawn_sun {
   position: absolute;
@@ -285,9 +296,9 @@ a:hover {
 
 .placeholder {
   position: absolute;
-  top: 8%;
-  left: 12%;
-  height: 53rem;
+  top: 10%;
+  left: 10%;
+  height: 43rem;
   display: none;
   // height: 60rem;
   // margin-top: -30rem; /* Half the height */
@@ -296,7 +307,7 @@ a:hover {
   // justify-content: center;
   // height: 80%;
   // width: 80%;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
   z-index: 11;
 
   // border: 10px solid coral;
@@ -304,25 +315,25 @@ a:hover {
 }
 
 
-.is-home {
-    background: linear-gradient(270deg, #1B1D4D 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(50% 50% at 50% 50%, rgba(255, 193, 166, 0.5) 0%, rgba(255, 199, 0, 0.415422) 46.87%, rgba(114, 29, 154, 0.273177) 82.29%, rgba(0, 42, 191, 0.315) 100%), linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(292.12deg, #2B3969 16.69%, #FFAD33 25.56%, #768EE4 40.34%, #923C6F 76.32%);
-    background-blend-mode: normal, multiply, normal, multiply;
-  }
+// .is-home {
+//     background: linear-gradient(270deg, #1B1D4D 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(50% 50% at 50% 50%, rgba(255, 193, 166, 0.5) 0%, rgba(255, 199, 0, 0.415422) 46.87%, rgba(114, 29, 154, 0.273177) 82.29%, rgba(0, 42, 191, 0.315) 100%), linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(292.12deg, #2B3969 16.69%, #FFAD33 25.56%, #768EE4 40.34%, #923C6F 76.32%);
+//     background-blend-mode: normal, multiply, normal, multiply;
+//   }
 
-.is-dawn {
-    background: url("../images/dawn.png");
-    background-size: auto 100%;
-    background-blend-mode: normal, multiply, normal, multiply;
-  }
+// .is-dawn {
+//     background: url("../images/dawn.png");
+//     background-size: auto 100%;
+//     background-blend-mode: normal, multiply, normal, multiply;
+//   }
 
-.is-sunrise {
-    background: linear-gradient(180deg, #5583F9 19.27%, rgba(151, 73, 213, 0.47) 55.73%, rgba(165, 111, 233, 0) 100%), #F1D897;
-    background-blend-mode: normal, multiply, normal, multiply;
-  } 
+// .is-sunrise {
+//     background: linear-gradient(180deg, #5583F9 19.27%, rgba(151, 73, 213, 0.47) 55.73%, rgba(165, 111, 233, 0) 100%), #F1D897;
+//     background-blend-mode: normal, multiply, normal, multiply;
+//   } 
 
-.is-morning {
-    background: linear-gradient(90deg, #3D5BC5 -7.34%, #768EE4 49.19%, #E4D4A8 95.38%, #F7BDC0 109.35%);
-  }
+// .is-morning {
+//     background: linear-gradient(90deg, #3D5BC5 -7.34%, #768EE4 49.19%, #E4D4A8 95.38%, #F7BDC0 109.35%);
+//   }
 
 .content {
   transition: all 0.3s ease-out;
@@ -355,9 +366,6 @@ a:hover {
   box-sizing: border-box;
 }
 
-$width: 100vw;
-$height: 100vh;
-$pages: 4;
 
 .viewport {
   position: relative;
@@ -393,9 +401,9 @@ $pages: 4;
   position: relative;
   width: $height;
   height: $width;
-  background: linear-gradient(0deg, #1B1D4D 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(50% 50% at 50% 50%, rgba(255, 193, 166, 0.5) 0%, rgba(255, 199, 0, 0.415422) 46.87%, rgba(114, 29, 154, 0.273177) 82.29%, rgba(0, 42, 191, 0.315) 100%), linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(22.12deg, #2B3969 16.69%, #FFAD33 25.56%, #768EE4 40.34%, #923C6F 76.32%);
-  background-size: auto 100%;
-  background-blend-mode: normal, multiply, normal, multiply;
+  // background: linear-gradient(0deg, #1B1D4D 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(50% 50% at 50% 50%, rgba(255, 193, 166, 0.5) 0%, rgba(255, 199, 0, 0.415422) 46.87%, rgba(114, 29, 154, 0.273177) 82.29%, rgba(0, 42, 191, 0.315) 100%), linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(22.12deg, #2B3969 16.69%, #FFAD33 25.56%, #768EE4 40.34%, #923C6F 76.32%);
+  // background-size: auto 100%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07)), conic-gradient(from 180deg at 50% 50%, rgba(245, 245, 245, 0.1) -33.24deg, rgba(255, 107, 0, 0.1) 37.77deg, rgba(236, 108, 239, 0.190704) 124.65deg, rgba(67, 176, 255, 0.38) 179.94deg, rgba(245, 245, 245, 0.1) 326.76deg, rgba(255, 107, 0, 0.1) 397.77deg), linear-gradient(0deg, #0C107E -7.35%, rgba(0, 0, 0, 0) 104.14%), radial-gradient(50% 50% at 50% 50%, rgba(142, 187, 255, 0.5) 0%, rgba(255, 223, 112, 0.5) 46.87%, rgba(114, 29, 154, 0.273177) 82.29%, rgba(0, 42, 191, 0.315) 100%), linear-gradient(4.97deg, #FF0000 -28.26%, rgba(255, 255, 255, 0) 100.32%), linear-gradient(31.36deg, #2B3969 -4.61%, #FFDEAC 13.69%, #FF7A5C 26.72%, #8DC8FF 88.55%);  background-blend-mode: normal, normal, normal, multiply, normal, multiply;
 }
 
 
@@ -412,14 +420,6 @@ $pages: 4;
 
 
 
-
-// .dawn.background-colors {
-//   position: relative;
-//   width: $height;
-//   height: $width * $pages;
-//   background: url("../images/dawn.png");
-//   background-size: 100% 100%;
-// }
 
 
 #dawn.noise{
@@ -465,7 +465,7 @@ $pages: 4;
     // border: 1px solid white;
     font-size: 4rem;
     color: transparent;
-    text-shadow: 0 0 .1rem rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 .15rem rgba(255, 255, 255, 0.8);
     line-height: 120%;
   }
 
@@ -477,19 +477,15 @@ $pages: 4;
     left: 1%;
   }
 
-  h1 {
-    font-size: 5rem;
-    font-family: sans-serif;
-    font-weight: 700;
-    color: whitesmoke;
-    transition: transform 3s ease-in-out, color 1s ease-in-out;
-    cursor: pointer;
+  // h1 {
+  //   font-size: 2rem;
+  //   font-family: sans-serif;
+  //   font-weight: 700;
+  //   color: whitesmoke;
+  //   transition: transform 3s ease-in-out, color 1s ease-in-out;
+  //   cursor: pointer;
 
-    &:hover {
-      transform: scale(1.2);
-      color: black;
-    }
-  }
+  // }
 }
 
 .parallax-background {
@@ -516,12 +512,16 @@ $pages: 4;
   }
 }
 
+h1.homeTitle {
+  width: 70%;
+}
+
 
 input{
   color: #fff;
   border: none;
   // box-shadow:0px 2px 2px rgba(255, 255, 255, 0.5);
-  border-bottom: 1.7px solid rgba(255, 255, 255, 0.5);
+  // border-bottom: 1.7px solid rgba(255, 255, 255, 0.5);
   background: transparent;
   height: 6rem;
   width: 15rem;
@@ -530,13 +530,17 @@ input{
 }
 
 input#city {
-  width: 22rem;
+  width: 30rem;
+}
+
+input#name {
+  width: 20rem;
 }
 
 input[type=text]{
   // display: inline-block;
   color: white;
-  font-family: 'simplon-mono', serif;
+  font-family: 'simplon-mono', sans-serif;
   font-size: large;
   text-align: center;
   padding-top: 4rem;
@@ -554,11 +558,16 @@ textarea:focus {
 //-------------------DAWN TEXT----------------//
 .myname {
   position: absolute;
-  left: 8%;
+  left: 16%;
   bottom: 68%;
-  // border: 1px solid turquoise;
-  // padding-top: 2rem;
-  // padding-bottom: 0rem;
+}
+
+#nameline {
+  position: absolute;
+  width: 20rem;
+  top: 5.1rem;
+  left: 19.5rem;
+  // transform: rotate(-1deg);
 }
 
 #one {
@@ -579,35 +588,42 @@ textarea:focus {
   width: 100%;
 }
 
-#testbtn{
-  position: absolute;
-  left:0%;
-  top: 0%;
-}
-
 .myage {
   position: absolute;
-  left: 20%;
-  bottom: 30%;
+  left: 33%;
+  bottom: 35%;
   text-align: left;
   // border: 1px solid turquoise;
 
+}
+
+#yoline {
+  position: absolute;
+  width: 15rem;
+  top: 9.9rem;
+  left: 11.5rem;
+  transform: scaleY(-1);
 }
 
 
 .myyear {
   position: absolute;
-  left: 80%;
-  bottom: 67%;
+  left: 95%;
+  bottom: 64%;
   text-align: left;
-  // width: 100%;
-  // border: 1px solid turquoise;
+}
 
+#yrline {
+  position: absolute;
+  width: 15rem;
+  top: 5.3rem;
+  left: 10rem;
+  transform: scaleX(-1);
 }
 
 .mypriority {
   position: absolute;
-  left: 125%;
+  left: 127%;
   bottom: 40%;
   text-align: left;
   // width: 100%;
@@ -618,27 +634,33 @@ textarea:focus {
 
 .mycity {
   position: absolute;
-  left: 195%;
-  bottom: 60%;
+  left: 200%;
+  top: 2%;
   text-align: left;
-  // width: 100%;
-  // border: 1px solid turquoise;
+}
 
+#cityline {
+  position: absolute;
+  width: 30rem;
+  top: 13.9rem;
+  left: 44rem;
+  transform: rotate(1deg);
 }
 
 .instruction {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.6);
   position: absolute;
 }
 
 .myname .instruction.NeueHaas300 {
-  left: 54%;
+  left: 49%;
+  top: 96%;
 }
 
 .myage .instruction.NeueHaas300 {
   left: 25%;
-  top: 99%;
+  top: 95%;
 }
 
 .myyear .instruction.NeueHaas300 {
@@ -648,7 +670,7 @@ textarea:focus {
 
 .mycity .instruction.NeueHaas300 {
   left: 44.3rem;
-  top: 15.2rem;
+  top: 15.4rem;
 }
 
 .btn {
@@ -773,59 +795,44 @@ textarea:focus {
 }
 
 
-#p11 {
+#pcity4 {
   position: absolute;
-  left: 46rem;
-  top: -5.5rem;
-  width: 30rem;
+  left: 53rem;
+  top: 17rem;
+  height: 20rem;
   display: none;
 }
 
-#p12 {
+#prural4 {
   position: absolute;
-  left: 46rem;
-  top: -26rem;
-  width: 20rem;
+  left: 53rem;
+  top: 17rem;
+  height: 20rem;
   display: none;
 }
 
-#p13 {
-  position: absolute;
-  left: 54rem;
-  top: 15rem;
-  width: 14rem;
-  display: none;
-}
-
-#d1 {
-  position: absolute;
-  left: 35rem;
-  top: 20rem;
-  width: 14rem;
-  color: rgba(255, 255, 255, 0.6);
-  display: none;
-}
-
-#p14 {
-  position: absolute;
-  left: 83rem;
-  top: -5rem;
-  width: 35rem;
-  display: none;
-}
 
 #nextsunrise {
   position: absolute;
-  right: -276.5%;
-  bottom: 57%;
+  left: 1.36rem;
+  top: .5rem;
+  // right: -173.5%;
+  // bottom: 57%;
 }
 
+
+#gotosunrise {
+  position: absolute;
+  bottom: 55%;
+  right: -190rem;
+  width: 5.6rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
 .dawn.nextbox_next {
   position: absolute;
-  // left: 127.5rem;
-  right: -280%;
-  bottom: 55%;
-  // top: 14.2rem;
+  left: 0;
+  width: 5rem;
 }
 
 //////////////sunrise

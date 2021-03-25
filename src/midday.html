@@ -8,6 +8,9 @@
     <link href="assets/app.css" rel="stylesheet">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.typewatch.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
   </head>
   <body data-barba="wrapper">
   <!-- put here content that will not change
@@ -21,7 +24,7 @@
         <div>
           <h3 id="aboutopen" class="NeueHaas300 about">
             About our project
-            <img class="nextbox_small" src="images/recbox_small.png" width="130">
+            <img class="nextbox_small" id="border_about" src="images/recbox_small.png">
           </h3>
         </div>
       </div>
@@ -55,17 +58,16 @@
 
         <section class="midday parallax-child-container">
           <div class="midday parallax-child">
-            <div>
-              <img class="midday nextbox_next" id="tosunset" src="images/recbox_small.png" width="110">
+            <div id="gotosunset">
+              <img class="midday nextbox_next" id="tosunset" src="images/recbox_next.png" width="110">
               <h3 id="nextsunset" class="NeueHaas300">
                 <a href="sunset.html">Next</a>
               </h3>
-              
             </div>
-            
+
             <div class="Spectral300"> 
               <form class="context3" id="context3">
-                <div class="SimplonMono300 middaytime">Midday | 1:00:00 P.M</div>
+                <div class="SimplonMono300 middaytime">Midday | 1:00:00 P.M.</div>
 
                 <pre class="text">I have a cool idea for my project
       - but it requires some new skills.</pre>
@@ -75,22 +77,43 @@
                 <div>
                   <pre class="text">During our lunch break, my         
             coworkers and I look for  </pre>
-                  <img class="response" id="p12" src="images/p1_2.png"> 
-                  <img id="circlenextplace" src="images/circle_q1.png" width="350">
-                  <img id="circlelifehere" src="images/circle_q1.png" width="350">
+              <img id="circletutorials" src="images/circle.png" width="350">
+              <img id="circlefreelancers" src="images/circle.png" width="350">
 
-                  <div class="choice3 SimplonMono400 btn">
-                    <!-- <button id="work" class="btn">Work</button> -->
-                    <div id="nextplace" class="btn">tutorials</div>
-                    <br>
-                    <div id="lifehere" class="btn">freelancers</div>
+              <div class="choice3 SimplonMono400 btn">
+                <div id="tutorials" class="btn">tutorials</div>
+                <br>
+                <div id="freelancers" class="btn">freelancers</div>                
+              </div>
 
-                    <!-- <button id="family" class="btn">Family & Friends</button>
-                    <button id="pet" class="btn">Pet</button>
-                    <button id="travel" class="btn">Travel</button>
-                    <button id="downtime" class="btn">Downtime</button> -->
-                
-                  </div>
+                  <video  id="pfreelancers">
+                    <source  src="images/freelancers.webm" type="video/webm">
+                  </video>
+    
+                  <video id="ptutorials">
+                    <source  src="images/tutorials.webm" type="video/webm">
+                  </video> 
+
+                  <p class="SimplonMono500" id="dtutorials1">
+                    2929 designers might use this time to increase their skill sets.
+                  </p>
+                  <p class="SimplonMono500" id="dtutorials2">
+                    _designers who prioritize [priority] are learning something on the job [learning opp]
+                  </p>
+                  <p class="SimplonMono500" id="dtutorials3">
+                    _designers who have [years of experience] on the job feel they are learning something everyday [learning opp]
+                  </p>
+  
+  
+                  <p class="SimplonMono500" id="dfreelancers1">
+                    1376 designers today feel they are learning very little today.
+                  </p>
+                  <p class="SimplonMono500" id="dfreelancers2">
+                    _designers in [city] are feeling they don't have the opportunity to learn new skills [challenge]
+                  </p>
+                  <p class="SimplonMono500" id="dfreelancers3">
+                    designers with [years of experience] feel that they don't have much room to grow [challenge] (there's not much room to grow in my role)
+                  </p>
 
 
 

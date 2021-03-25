@@ -8,6 +8,9 @@
     <link href="assets/app.css" rel="stylesheet">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.typewatch.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
   </head>
   <body data-barba="wrapper">
   <!-- put here content that will not change
@@ -22,7 +25,7 @@
         <div>
           <h3 id="aboutopen" class="NeueHaas300 about">
             About our project
-            <img class="nextbox_small" src="images/recbox_small.png" width="130">
+            <img class="nextbox_small" id="border_about" src="images/recbox_small.png">
           </h3>
         </div>
       </div>
@@ -56,8 +59,9 @@
 
         <section class="sunrise parallax-child-container">
           <div class="sunrise parallax-child">
-            <div>
-              <img class="sunrise nextbox_next" id="tomorning" src="images/recbox_small.png" width="110">
+            <div id="gotomorning">
+              <!-- <img class="dawn nextcircle_next" src="images/circle1.gif" width="110"> -->
+              <img class="sunrise nextbox_next" id="tomorning" src="images/recbox_next.png" width="110">
               <h3 id="nextmorning" class="NeueHaas300">
                 <a href="morning.html">Next</a>
               </h3>
@@ -66,7 +70,7 @@
             
             <div class="Spectral300"> 
               <form class="context1" id="context1">
-                <div class="SimplonMono300 sunrisetime">Sunrise | 7:00:00 A.M</div>
+                <div class="SimplonMono300 sunrisetime">Sunrise | 7:00:00 A.M.</div>
 
                 <pre class="text">On my way to work, I take in the 
                   people, buildings, 
@@ -76,39 +80,45 @@
               <form class="question1"> 
                 <div>
                   <pre class="text">I'm thinking about:</pre>
-                  <img class="response" id="p12" src="images/p1_2.png"> 
+                  <!-- <img class="response" id="p12" src="images/p1_2.png">  -->
                   <img id="circlenextplace" src="images/circle_q1.png" width="350">
                   <img id="circlelifehere" src="images/circle_q1.png" width="350">
 
-                  <div class="choice1 SimplonMono400 btn">
-                    <!-- <button id="work" class="btn">Work</button> -->
+                  <div class="choice1 SimplonMono400 btn rem">
                     <div id="nextplace" class="btn">the next place I want to live.</div>
                     <br>
                     <div id="lifehere" class="btn">the life I want to build here.</div>
-
-                    <!-- <button id="family" class="btn">Family & Friends</button>
-                    <button id="pet" class="btn">Pet</button>
-                    <button id="travel" class="btn">Travel</button>
-                    <button id="downtime" class="btn">Downtime</button> -->
-                
                   </div>
-
-
-
                 </div>
-
-
-              </form>
-              <form class="mycity"> 
-              <div>
-
+                <video  id="plifehere">
+                  <source  src="images/life_here.webm" type="video/webm">
+                </video>
+  
+                <video id="pnextplace">
+                  <source  src="images/next_place.webm" type="video/webm">
+                </video> 
                 
-              </div>
+                <p class="SimplonMono500" id="dnextplace1">
+                  2026 designers are waking up still feeling a little concerned about their jobs.
+                </p>
+                <p class="SimplonMono500" id="dnextplace2">
+                  _designers who prioritize are not at all thrilled to be going into work, but they do anyway.
+                </p>
+                <p class="SimplonMono500" id="dnextplace3"></p>
+
+
+                <p class="SimplonMono500" id="dlifehere1">
+                  5308 designers are on their way to work, feeling fairly stable.
+                </p>
+                <p class="SimplonMono500" id="dlifehere2"></p>
+                <p class="SimplonMono500" id="dlifehere3"></p>
+
               </form>
 
-            </div>
+
+
             <div class="responses">
-              <!-- <img id="p11" src="images/p1_1.png">  -->
+                      
             </div>
           </div>
         </section>

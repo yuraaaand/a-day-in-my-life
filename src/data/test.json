@@ -1,0 +1,58 @@
+[
+  {
+    "years of experience": "5 - 9 years",
+    "challenge": "I don't feel creatively satisfied",
+    "salary": "$100000 to $149999",
+    "benefits": "Paid time off|Paid parental leave|Medical and / or dental insurance|Disability insurance|Retirement account|Employer-matched retirement account|Employer-provided food / Meals|Transportation / Commuting benefits|Professional development / Education funding",
+    "learning opp": "Learning some new skills",
+    "satisfaction": "Happy but there's room for improvement",
+    "stability": "Rock solid",
+    "age": 26,
+    "issues": "Income inequality|Lack of software literacy",
+    "skills critical future": "Adaptability (to tech / social change)|Communication / Listening|Empathy",
+    "priority": "Work / Career|Family / Friends / Pets|Downtime",
+    "city": "Washington"
+  },
+  {
+    "years of experience": "1 - 4 years",
+    "challenge": "I don't feel creatively satisfied",
+    "salary": "$75000 to $99999",
+    "benefits": "Paid time off|Paid parental leave|Child care|Medical and / or dental insurance|Disability insurance|Life insurance|Retirement account|Employer-matched retirement account|Profit sharing / Stock options|Transportation / Commuting benefits|Fitness / Wellness benefits|Professional association memberships|Professional development / Education funding",
+    "learning opp": "Learning and increasing my skill set every day",
+    "satisfaction": "Extremely satisfied with my work situation",
+    "stability": "Rock solid",
+    "age": 25,
+    "issues": "Designing for disabilities|Design/designers not having a \"\"seat at the table\"\"|Ethical role of designers",
+    "skills critical future": "Adaptability (to tech / social change)|Cross-functional / Multi-disciplinary skills|Storytelling",
+    "priority": "Work / Career|Family / Friends / Pets|Hobbies",
+    "city": "Charlotte"
+  },
+  {
+    "years of experience": "1 - 4 years",
+    "challenge": "I don't feel creatively satisfied",
+    "salary": "$75000 to $99999",
+    "benefits": "Paid time off|Medical and / or dental insurance|Disability insurance|Life insurance|Retirement account|Employer-matched retirement account|Transportation / Commuting benefits",
+    "learning opp": "Learning some new skills",
+    "satisfaction": "Happy but there's room for improvement",
+    "stability": "Fairly stable",
+    "age": 31,
+    "issues": "Algorithmic bias|Diversity in design + tech|Ethical role of designers|Lack of accessibility of design education|Lack of awareness of design's impact|Lack of guidelines for UX ethics|Lack of resources for design research",
+    "skills critical future": "Adaptability (to tech / social change)|Design frameworks (HCD Design Thinking)|Design research",
+    "priority": "Work / Career|Family / Friends / Pets|Hobbies",
+    "city": "Washington"
+  },
+  {
+    "years of experience": "5 - 9 years",
+    "challenge": "I don't feel creatively satisfied",
+    "salary": "$75000 to $99999",
+    "benefits": "Paid time off|Medical and / or dental insurance|Life insurance|Employer-matched retirement account|Employer-provided food / Meals",
+    "learning opp": "Learning and increasing my skill set every day",
+    "satisfaction": "Not really satisfied but I deal",
+    "stability": "Fairly stable",
+    "age": 36,
+    "issues": "Design/designers not having a \"\"seat at the table\"\"|Environmental impacts of design|Lack of guidelines for UX ethics",
+    "skills critical future": "Adaptability (to tech / social change)|Design frameworks (HCD Design Thinking)|Design research",
+    "priority": "Work / Career|Side hustle / Passion project|Hobbies",
+    "city": "Charlotte"
+  }
+]

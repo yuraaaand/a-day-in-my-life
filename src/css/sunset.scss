@@ -81,7 +81,7 @@ $pages: 2;
 
   .context4-3 {
     position: absolute;
-    left: 105%;
+    left: 100%;
     bottom: 74%;
     text-align: left;
     // border: 1px solid turquoise;
@@ -92,7 +92,7 @@ $pages: 2;
 
 .question4 {
   position: absolute;
-  left: 140%;
+  left: 125%;
   bottom: 55%;
   text-align: left;
   // width: 100%;
@@ -109,34 +109,30 @@ $pages: 2;
     top: -1rem;
     transition: ease-out 0.5s all;
     transition-delay: 1s;
-    line-height: 80%;
+    line-height: 70%;
     border: 2px solid black;
   }
 
 
-#circlenextplace {
-  position: absolute;
-  // work
-  left: 18rem;
-  top: 6.7rem;
-  display: none;
-  // visibility: hidden;
-  // opacity: 0;
-
-}
-
-
-#circlelifehere {
-  position: absolute;
-  // work
-  left: 18rem;
-  top: 10rem;
-  display: none;
-  // visibility: hidden;
-  // opacity: 0;
-
-}
-
+  #circleworklate {
+    position: absolute;
+    left: 21.6rem;
+    top: -.7rem;
+    display: none;
+    width: 14rem;
+  
+  }
+  
+  
+  #circleheadhome {
+    position: absolute;
+    left: 21.6rem;
+    top: 2.1rem;
+    display: none;
+    width: 14rem;
+  }
+  
+  
 
 .sunset_sun {
     position: absolute;
@@ -147,27 +143,15 @@ $pages: 2;
 
 
 
-  #nextnight {
-    position: absolute;
-    right: -106.5%;
-    bottom: 57%;
-  }
-  
-  
-  .sunset.nextbox_next {
-    position: absolute;
-    right: -110%;
-    bottom: 55%;
-  }
 
 #worklate {
-    width: 10rem;
+    width: 20rem;
     transition: ease-out 0.5s all;
     transition-delay: 1s;
 }
 
 #headhome {
-    width: 10rem;
+    width: 25rem;
     transition: ease-out 0.5s all;
     transition-delay: 1s;
 }
@@ -176,4 +160,126 @@ $pages: 2;
     // border: 2px solid black;
     width: 30rem;
 }
-    
+
+
+#pheadhome {
+  position: absolute;
+  left: 52rem; //(-23)
+  top: -13rem;
+  height: 20rem;
+  display: none;
+}
+
+#pworklate {
+  position: absolute;
+  left: 52rem; //(-23)
+  top: -13rem;
+  height: 20rem;
+  display: none;
+}
+
+
+#dheadhome1 {
+  position: absolute;
+  left: 45rem;
+  top: -17rem;
+  width: 17rem;
+  letter-spacing: 0;
+  line-height: 125%;
+  font-size: small;
+  color: rgba(255, 255, 255, 1);
+  display:none;
+}
+
+
+
+#dheadhome2 {
+  position: absolute;
+  left: 35rem;
+  top: 15rem;
+  width: 17rem;
+  letter-spacing: 0;
+  line-height: 125%;
+  font-size: small;
+  color: rgba(255, 255, 255, 1);
+  display: none;
+}
+
+#dheadhome3 {
+  position: absolute;
+  left: 62rem;
+  top: 8rem;
+  width: 17rem;
+  letter-spacing: 0;
+  line-height: 125%;
+  font-size: small;
+  color: rgba(255, 255, 255, 1);
+  display:none
+}
+
+
+#dworklate1 {
+  position: absolute;
+  left: 45rem;
+  top: -16rem;
+  width: 17rem;
+  letter-spacing: 0;
+  line-height: 125%;
+  font-size: small;
+  color: rgba(255, 255, 255, 1);
+  display:none;
+}
+
+
+#dworklate2 {
+  position: absolute;
+  left: 35rem;
+  top: 15rem;
+  width: 17rem;
+  letter-spacing: 0;
+  line-height: 125%;
+  font-size: small;
+  color: rgba(255, 255, 255, 1);
+  display: none;
+}
+
+
+#dworklate3 {
+  position: absolute;
+  left: 62rem;
+  top: 8rem;
+  width: 17rem;
+  letter-spacing: 0;
+  line-height: 125%;
+  font-size: small;
+  color: rgba(255, 255, 255, 1);
+  display:none
+}
+
+
+
+
+#nextnight {
+position: absolute;
+left: 1.36rem;
+top: .5rem;
+}
+
+
+#gotonight {
+// border: 3px solid red;
+position: absolute;
+bottom: 55%;
+right: -110rem;
+width: 5.6rem;
+height: 2.4rem;
+cursor: pointer;
+}
+
+.sunset.nextbox_next {
+position: absolute;
+top: 0rem;
+left: 0;
+width: 5rem;
+}
+  

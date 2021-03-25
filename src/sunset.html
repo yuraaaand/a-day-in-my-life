@@ -8,11 +8,14 @@
     <link href="assets/app.css" rel="stylesheet">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.typewatch.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
   </head>
   <body data-barba="wrapper">
   <!-- put here content that will not change
   between your pages, like <header> or <nav> -->
-    <main class="viewport" data-barba="container" data-barba-namespace="sunset" class="is-sunset" data-background="linear-gradient(180deg, #7FA0F4 0%, #61A6F8 100%)">
+    <main class="viewport" data-barba="container" data-barba-namespace="sunset" class="is-sunset" data-background="linear-gradient(179.86deg, #3A61C7 0.12%, #BF8ABA 87.96%, #FFEEC2 130.63%)">
       
       <div class="topNav">
         <h2 class="Spectral300 navTitle">
@@ -21,7 +24,7 @@
         <div>
           <h3 id="aboutopen" class="NeueHaas300 about">
             About our project
-            <img class="nextbox_small" src="images/recbox_small.png" width="130">
+            <img class="nextbox_small" id="border_about" src="images/recbox_small.png">
           </h3>
         </div>
       </div>
@@ -55,17 +58,16 @@
 
         <section class="sunset parallax-child-container">
           <div class="sunset parallax-child">
-            <div>
-              <img class="sunset nextbox_next" id="tonight" src="images/recbox_small.png" width="110">
+            <div id="gotonight">
+              <img class="sunset nextbox_next" id="tonight" src="images/recbox_next.png" width="110">
               <h3 id="nextnight" class="NeueHaas300">
                 <a href="night.html">Next</a>
               </h3>
-              
             </div>
             
             <div class="Spectral300"> 
               <form class="context4-1" id="context4">
-                <div class="SimplonMono300 sunsettime">Sunset | 6:00:00 P.M</div>
+                <div class="SimplonMono300 sunsettime">Sunset | 6:00:00 P.M.</div>
 
                 <pre class="text">Before I head out, 
                 a coworker stops me. </pre>
@@ -90,24 +92,43 @@
               <form class="question4"> 
                 <div>
                   <pre class="text">I get ready to </pre>
-                  <img class="response" id="p12" src="images/p1_2.png"> 
-                  <img id="circlenextplace" src="images/circle_q1.png" width="350">
-                  <img id="circlelifehere" src="images/circle_q1.png" width="350">
+                  <img id="circleworklate" src="images/circle_q1.png" width="350">
+                  <img id="circleheadhome" src="images/circle_q1.png" width="350">
 
                   <div class="choice4 SimplonMono400 btn" id="choicegroup">
-                    <!-- <button id="work" class="btn">Work</button> -->
                     <div id="worklate" class="btn">work late</div>
                     <br>
                     <div id="headhome" class="btn">head home</div>
-
-                    <!-- <button id="family" class="btn">Family & Friends</button>
-                    <button id="pet" class="btn">Pet</button>
-                    <button id="travel" class="btn">Travel</button>
-                    <button id="downtime" class="btn">Downtime</button> -->
-                
                   </div>
 
+                  <video  id="pheadhome">
+                    <source  src="images/headhome.webm" type="video/webm">
+                  </video>
+    
+                  <video id="pworklate">
+                    <source  src="images/worklate.webm" type="video/webm">
+                  </video> 
 
+                  <p class="SimplonMono500" id="dworklate1">
+                    8081 designers are prioritizing work this evening.
+                  </p>
+                  <p class="SimplonMono500" id="dworklate2">
+                    _designers who prioritize [priority] are learning something on the job [learning opp]
+                  </p>
+                  <p class="SimplonMono500" id="dworklate3">
+                    _designers who have [years of experience] on the job feel they are learning something everyday [learning opp]
+                  </p>
+  
+  
+                  <p class="SimplonMono500" id="dheadhome1">
+                    2836 designers are thinking about utilizing their fitness and wellness benefits this evening.
+                  </p>
+                  <p class="SimplonMono500" id="dheadhome2">
+                    426 designers are thankful for the childcare benefits and looking forward to get back home.
+                  </p>
+                  <p class="SimplonMono500" id="dheadhome3">
+                    There are 3565 designers who are enjoying their paid parental leave tonight.
+                  </p>
 
                 </div>
 

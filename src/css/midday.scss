@@ -83,6 +83,18 @@ $pages: 2;
 }
 
 
+#tutorials {
+  transition: ease-out 0.5s all;
+  transition-delay: 1s;
+}
+
+#freelancers {
+  transition: ease-out 0.5s all;
+  transition-delay: 1s;
+}
+
+
+
   
 .choice3 {
     position: absolute;
@@ -91,64 +103,168 @@ $pages: 2;
     top: 4rem;
     transition: ease-out 0.5s all;
     transition-delay: 1s;
-    line-height: 80%;
+    line-height: 70%;
   }
 
-#nextplace {
-  transition: ease-out 0.5s all;
-  transition-delay: 1s;
-}
-
-#lifehere {
-  transition: ease-out 0.5s all;
-  transition-delay: 1s;
-}
 
 
 
-#circlenextplace {
+#circletutorials {
   position: absolute;
-  // work
-  left: 18rem;
-  top: 6.7rem;
+  left: 53rem;
+  top: 4rem;
   display: none;
-  // visibility: hidden;
-  // opacity: 0;
+  width: 8rem;
 
 }
 
 
-#circlelifehere {
+#circlefreelancers {
   position: absolute;
-  // work
-  left: 18rem;
-  top: 10rem;
+  left: 53.4rem;
+  top: 6.8rem;
   display: none;
-  // visibility: hidden;
-  // opacity: 0;
-
+  width: 8rem;
 }
 
 
 .midday_sun {
     position: absolute;
-    bottom: 40rem;
-    left: 17rem;
+    bottom: 42rem;
+    left: 22rem;
     z-index: 2;
   }
 
 
+  #pfreelancers {
+    position: absolute;
+    left: 75rem;
+    top: 0rem;
+    height: 20rem;
+    display: none;
+  }
+  
+  #ptutorials {
+    position: absolute;
+    left: 75rem;
+    top: 0rem;
+    height: 20rem;
+    display: none;
+  }
+  
+  
+  #dfreelancers1 {
+    position: absolute;
+    left: 47rem;
+    top: 14rem;
+    width: 17rem;
+    letter-spacing: 0;
+    line-height: 125%;
+    font-size: small;
+    color: rgba(255, 255, 255, 1);
+    display: none;
+  }
+  
+  
+  
+  #dfreelancers2 {
+    position: absolute;
+    left: 64rem;
+    top: 24rem;
+    width: 17rem;
+    letter-spacing: 0;
+    line-height: 125%;
+    font-size: small;
+    color: rgba(255, 255, 255, 1);
+    display: none;
+  }
+  
+  #dfreelancers3 {
+    position: absolute;
+    left: 90rem;
+    top: -6rem;
+    width: 17rem;
+    letter-spacing: 0;
+    line-height: 125%;
+    font-size: small;
+    color: rgba(255, 255, 255, 1);
+    display: none;
+  }
 
-  #nextsunset {
+  // #dfreelancers4 {
+  //   position: absolute;
+  //   left: 84rem;
+  //   top: -5rem;
+  //   width: 17rem;
+  //   letter-spacing: 0;
+  //   line-height: 125%;
+  //   font-size: small;
+  //   color: rgba(255, 255, 255, 1);
+  //   display: none;
+  // }
+
+  #dtutorials1 {
     position: absolute;
-    right: -106.5%;
-    bottom: 57%;
+    left: 47rem;
+    top: 14rem;
+    width: 17rem;
+    letter-spacing: 0;
+    line-height: 125%;
+    font-size: small;
+    color: rgba(255, 255, 255, 1);
+    display:none;
   }
   
   
-  .midday.nextbox_next {
+  #dtutorials2 {
     position: absolute;
-    right: -110%;
-    bottom: 55%;
+    left: 64rem;
+    top: 24rem;
+    width: 17rem;
+    letter-spacing: 0;
+    line-height: 125%;
+    font-size: small;
+    color: rgba(255, 255, 255, 1);
+    display: none;
   }
+  
+  
+  #dtutorials3 {
+    position: absolute;
+    left: 90rem;
+    top: -6rem;
+    width: 17rem;
+    letter-spacing: 0;
+    line-height: 125%;
+    font-size: small;
+    color: rgba(255, 255, 255, 1);
+    display:none
+  }
+  
+  
+
+
+#nextsunset {
+  position: absolute;
+  left: 1.36rem;
+  top: .5rem;
+}
+
+
+#gotosunset {
+  // border: 3px solid red;
+  position: absolute;
+  bottom: 55%;
+  right: -105rem;
+  width: 5.6rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+
+.midday.nextbox_next {
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  width: 5rem;
+}
     
