@@ -13,7 +13,7 @@ app.use(express.static('dist'));
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get('/', (request, response) => {
-  response.sendFile(__dirname + '/dist/index.html');
+  response.sendFile(__dirname + '/src/index.html');
 });
 
 // listen for requests :)
