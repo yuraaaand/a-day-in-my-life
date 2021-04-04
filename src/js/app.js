@@ -17,7 +17,6 @@ var citydata;
 barba.hooks.before((data)=> {
     const background = data.current.container.dataset.background;
     body.style.setProperty('background', background);
-    // console.log(background)
 })
 
 barba.init({
